@@ -1,4 +1,4 @@
-package com.kiel.workshopmongo.repository;
+package com.kiel.workshopmongo.repositories;
 
 import com.kiel.workshopmongo.domain.User;
 import org.springframework.data.mongodb.repository.MongoRepository;

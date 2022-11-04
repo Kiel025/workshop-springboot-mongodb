@@ -1,7 +1,7 @@
 package com.kiel.workshopmongo.config;
 
 import com.kiel.workshopmongo.domain.User;
-import com.kiel.workshopmongo.repository.UserRepository;
+import com.kiel.workshopmongo.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;

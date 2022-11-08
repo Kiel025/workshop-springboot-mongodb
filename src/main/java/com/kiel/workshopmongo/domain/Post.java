@@ -18,7 +18,6 @@ public class Post implements Serializable {
 
     @Id
     private String id;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate date;
     private String title;
     private String body;

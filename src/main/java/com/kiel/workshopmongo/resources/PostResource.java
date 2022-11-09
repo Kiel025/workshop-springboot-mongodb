@@ -29,4 +29,11 @@ public class PostResource {
         return ResponseEntity.ok().body(posts);
     }
 
+    @GetMapping(value = "/bodysearch")
+    public ResponseEntity<List<Post>> findByBody(@RequestParam(value = "text", defaultValue = "") String text) {
+        text = URL.decodeParam(text);
+        List<Post> posts = service.findByBody(text);
+        return ResponseEntity.ok().body(posts);
+    }
+
 }

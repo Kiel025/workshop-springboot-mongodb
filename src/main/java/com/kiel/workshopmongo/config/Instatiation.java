@@ -17,6 +17,8 @@ import java.util.Arrays;
 @Configuration
 public class Instatiation implements CommandLineRunner {
 
+    private static final DateTimeFormatter fmt =  DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     @Autowired
     UserRepository userRepository;
 
@@ -35,15 +37,15 @@ public class Instatiation implements CommandLineRunner {
 
         userRepository.saveAll(Arrays.asList(maria, alex, bob));
 
-        Post post1 = new Post(null, LocalDate.parse("21/03/2018", DateTimeFormatter.ofPattern("dd/MM/yyyy")), "Partiu viagem", "Vou viajar para São Paulo. Abraços!", new AuthorDTO(maria));
-        Post post2 = new Post(null, LocalDate.parse("23/03/2018", DateTimeFormatter.ofPattern("dd/MM/yyyy")), "Bom dia", "Acordei feliz hoje!", new AuthorDTO(maria));
+        Post post1 = new Post(null, LocalDate.parse("21/03/2018", fmt), "Partiu viagem", "Vou viajar para São Paulo. Abraços!", new AuthorDTO(maria));
+        Post post2 = new Post(null, LocalDate.parse("23/03/2018", fmt), "Bom dia", "Acordei feliz hoje!", new AuthorDTO(maria));
 
-        CommentDTO comment1 = new CommentDTO("Boa viagem mano!", LocalDate.parse("21/03/2018", DateTimeFormatter.ofPattern("dd/MM/yyyy")), new AuthorDTO(alex));
-        CommentDTO comment2 = new CommentDTO("Aproveite!", LocalDate.parse("22/03/2018", DateTimeFormatter.ofPattern("dd/MM/yyyy")), new AuthorDTO(bob));
+        CommentDTO comment1 = new CommentDTO("Boa viagem mano!", LocalDate.parse("21/03/2018", fmt), new AuthorDTO(alex));
+        CommentDTO comment2 = new CommentDTO("Aproveite!", LocalDate.parse("22/03/2018", fmt), new AuthorDTO(bob));
 
         post1.getComments().addAll(Arrays.asList(comment1, comment2));
 
-        CommentDTO comment3 = new CommentDTO("Tenha um ótimo dia!", LocalDate.parse("23/03/2018", DateTimeFormatter.ofPattern("dd/MM/yyyy")), new AuthorDTO(alex));
+        CommentDTO comment3 = new CommentDTO("Tenha um ótimo dia!", LocalDate.parse("23/03/2018", fmt), new AuthorDTO(alex));
 
         post2.getComments().add(comment3);
 

@@ -6,6 +6,7 @@ import com.kiel.workshopmongo.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -19,5 +20,9 @@ public class PostService {
         return post.orElseThrow(
                 () -> new ResourceNotFoundException(id)
         );
+    }
+
+    public List<Post> findByTitle(String text) {
+        return repository.findByTitleContainingIgnoreCase(text);
     }
 }

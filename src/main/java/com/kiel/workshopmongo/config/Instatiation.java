@@ -9,12 +9,14 @@ import com.kiel.workshopmongo.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
 @Configuration
+@Profile("test")
 public class Instatiation implements CommandLineRunner {
 
     private static final DateTimeFormatter fmt =  DateTimeFormatter.ofPattern("dd/MM/yyyy");

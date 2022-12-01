@@ -13,8 +13,8 @@ A aplicação consiste em um sistema de gerenciamento de usuários, posts e come
 
 ## Tecnologias utilizadas
 
-- Java
-- Spring Boot
+- Java 17
+- Spring Boot 2.7.5
 - MongoDB
 - Maven
 - Swagger UI

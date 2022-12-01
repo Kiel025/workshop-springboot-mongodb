@@ -5,8 +5,6 @@
 
 ## Sobre o projeto
 
-<hr>
-
 http://ec2-18-204-218-183.compute-1.amazonaws.com/swagger-ui/
 
 Esse workshop é uma aplicação backend web construída durante o curso de Java completo do **Nélio Alves**, com outras features implementadas por mim.
@@ -14,7 +12,6 @@ Esse workshop é uma aplicação backend web construída durante o curso de Java
 A aplicação consiste em um sistema de gerenciamento de usuários, posts e comentários, onde é possível adicionar usuários e obter seus posts com os comentários.
 
 ## Tecnologias utilizadas
-<hr>
 
 - Java
 - Spring Boot
@@ -24,14 +21,10 @@ A aplicação consiste em um sistema de gerenciamento de usuários, posts e come
 
 ## Implantação em produção
 
-<hr>
-
 - Amazon EC2
 - Banco de dados: MongoDB Atlas
 
 ## Como executar o projeto
-
-<hr>
 
 Pré-requisitos: Java 17, Mongod
 
@@ -51,7 +44,7 @@ cd workshopmongo
 ```
 
 
-# Autor
+## Autor
 
 Ezequiel Sousa Santos
 

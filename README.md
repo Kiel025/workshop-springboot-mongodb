@@ -5,7 +5,7 @@
 
 ## Sobre o projeto
 
-http://ec2-18-204-218-183.compute-1.amazonaws.com/swagger-ui/
+http://ec2-3-86-161-245.compute-1.amazonaws.com/swagger-ui/
 
 Esse workshop é uma aplicação backend web construída durante o curso de Java completo do **Nélio Alves**, com outras features implementadas por mim.
 

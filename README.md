@@ -1,8 +1,6 @@
 # Workshop MongoDB
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Kiel025/workshop-springboot-mongodb/blob/main/LICENCE)
 
->Status: em progresso ⚠️
-
 ## Sobre o projeto
 
 http://ec2-3-86-161-245.compute-1.amazonaws.com/swagger-ui/
